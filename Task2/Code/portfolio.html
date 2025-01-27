@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariya's Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <a href="#about" onclick="showSection('about')">About</a>
+        <a href="#skills" onclick="showSection('skills')">Skills</a>
+        <a href="#experience" onclick="showSection('experience')">Experience</a>
+        <a href="#projects" onclick="showSection('projects')">Projects</a>
+    </nav>
+
+    <div id="about">
+
+        <div class="head">
+            <h1>Hello, I'm Mariya</h1>
+        </div>
+        <div class="intro">
+            Experienced Software Engineer passionate about delivering user-centered solutions by blending creativity and
+            technology. Proficient in full-stack development, cloud platforms, and software engineering methodologies,
+            with a commitment to innovation and continuous growth.
+        </div>
+
+    </div>
+
+    <div id="skills">
+        <div class="head">
+            <h1>Skills</h1>
+        </div>
+        <div class="grid-container">
+            <div class="skill-box">JavaScript, TypeScript, Python, Java, C#, SQL, Go</div>
+            <div class="skill-box">Angular, React, Node.js</div>
+            <div class="skill-box">MongoDB, Neo4j, Heroku</div>
+            <div class="skill-box">Agile Methodologies: Scrum, Sprint Planning</div>
+            <div class="skill-box">Cloud Platforms: Heroku</div>
+            <div class="skill-box">Tools: GitHub, Visual Studio Code, Xcode, ServiceNow, Jira</div>
+        </div>
+    </div>
+
+    <div id="experience">
+        <div class="head">
+            <h1>Experience</h1>
+        </div>
+        <div class="experience-section">
+            <div class="experience-card">
+                <h2>Capgemini Technology Services India Limited, Bangalore</h2>
+                <p><strong>Professional II-Software Engineer Lead</strong> (Aug 2022 – Dec 2023)</p>
+                <div class="experience-details">
+                    <p>Developed, coded, and tested full-stack applications, focusing on e-commerce website stability
+                        and performance using React and Node.js.</p>
+                    <p>Collaborated with cross-functional teams in an Agile environment to implement design and
+                        architectural solutions.</p>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <h2>Tata Consultancy Services, Kochi, Kerala</h2>
+                <p><strong>Software Developer - Innovation</strong> (Jan 2020 - Aug 2022)</p>
+                <div class="experience-details">
+                    <p>Successfully developed and deployed multiple web applications enhancing data analysis and
+                        operational efficiency for various teams.</p>
+                    <p>Designed a web-based application using Angular and Mapbox GL JS to visualize water quality data
+                        for specific regions.</p>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <h2>Ruby Seven Studios, Kochi, India</h2>
+                <p><strong>Associate Game Programmer</strong> (Jun 2018 - Jan 2020)</p>
+                <div class="experience-details">
+                    <p>Developed and deployed features for gaming applications, maintaining code quality and
+                        contributing to a collaborative Agile team.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="head">
+            <h1>Projects</h1>
+        </div>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Project 1: Water Quality Data Visualization</h3>
+                <p>Designed a solution to analyze and display water quality data using Angular and Mapbox.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2: E-Commerce Web Application</h3>
+                <p>Developed a scalable e-commerce platform using React and Node.js.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 3: Employee Onboarding System</h3>
+                <p>Streamlined onboarding by creating a user-friendly web application.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSection(section) {
+            document.getElementById("about").style.display = "none";
+            document.getElementById("skills").style.display = "none";
+            document.getElementById("experience").style.display = "none";
+            document.getElementById("projects").style.display = "none";
+
+            if (section === "about") {
+                document.getElementById(section).style.display = "flex";
+            } else {
+                document.getElementById(section).style.display = "block";
+            }
+        }
+
+        document.getElementById("about").style.display = "flex";
+    </script>
+
+</body>
+
+</html>
