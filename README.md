@@ -8,7 +8,7 @@ npm
 # Installation Steps
 
 Clone this repository to your local machine :  git clone https://github.com/MariyaBenson/Assignment1Portfolio-.git
-Navigate to the Project Folder: cd Assignment1Portfolio-\Task3\Code\myproject
+Navigate to the Project Folder: cd Assignment1Portfolio-\Task3\Code
 Install Dependencies: npm install
 Run the project : npm start
 
