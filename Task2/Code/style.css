@@ -52,7 +52,7 @@ nav a:hover {
 
 #skills,
 #experience,
-#projects {
+#projects, #contact{
     display: none;
 }
 
@@ -74,6 +74,11 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     min-height: 100px;
+}
+#contact {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 #experience .experience-section {

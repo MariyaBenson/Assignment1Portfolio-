@@ -7,7 +7,6 @@
     <title>Mariya's Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -17,10 +16,10 @@
         <a href="#skills" onclick="showSection('skills')">Skills</a>
         <a href="#experience" onclick="showSection('experience')">Experience</a>
         <a href="#projects" onclick="showSection('projects')">Projects</a>
+        <a href="#contact" onclick="showSection('contact')">Contact</a>
     </nav>
 
     <div id="about">
-
         <div class="head">
             <h1>Hello, I'm Mariya</h1>
         </div>
@@ -29,7 +28,6 @@
             technology. Proficient in full-stack development, cloud platforms, and software engineering methodologies,
             with a commitment to innovation and continuous growth.
         </div>
-
     </div>
 
     <div id="skills">
@@ -104,12 +102,24 @@
         </div>
     </div>
 
+    <div id="contact">
+        <div class="head">
+            <h1>Contact</h1>
+        </div>
+        <div class="contact-details">
+            <p>Phone: 437-567-8901</p>
+            <p>Email: <a href="mailto:mariya_francis@outlook.com">mariya@example.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/mariyafrancis/" target="_blank">linkedin.com/in/mariya</a></p>
+        </div>
+    </div>
+
     <script>
         function showSection(section) {
             document.getElementById("about").style.display = "none";
             document.getElementById("skills").style.display = "none";
             document.getElementById("experience").style.display = "none";
             document.getElementById("projects").style.display = "none";
+            document.getElementById("contact").style.display = "none";
 
             if (section === "about") {
                 document.getElementById(section).style.display = "flex";
